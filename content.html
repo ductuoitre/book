@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Hasagi</title>
+    <link rel="stylesheet" href="hs.css">
+
+    <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header-all row">
+            <div class="left-header">
+                <ul>
+                    <li> <a href=""><i class="ti-help-alt"></i> Trợ Giúp</a></li>
+                    <li> <a href=""><i class="ti-calendar"></i> Tin tức</a></li>
+                    <li> <a href=""><i class="ti-gift"></i> Khuyến Mãi</a></li>
+                </ul>
+            </div>
+            <div class="right-header">
+                <ul>
+                    <li> <a href=""> <i class="ti-user"></i> Đăng Nhập</a></li>
+                    <li> <a href=""> <i class="ti-hand-point-right"></i> Đăng Kí</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- logo -->
+    <div class="logo">
+        <div class=" containerq">
+            <div class=" col  logo-left  ">
+                <img src="./img/cooltext421423241333677.png" alt="logo">
+            </div>
+            <div class="col  form ">
+                <div class="form-left col">
+                    <i class="ti-view-grid col"></i>
+                </div>
+                <div class="form-right col">
+                    <input type="text" name="term" id="term" placeholder="Bạn Cần Tìm Sách Nào ?" class="form-control">
+                    <button type="button" class="button-search"><span class="ti-search"></span></button>
+                </div>
+            </div>
+            <div class="col hotline ">
+                <i class="col ti-headphone-alt"></i>
+                <span class="col">
+                    <p>0969 999 999</p>
+                    <p>Hot Line</p>
+                </span>
+            </div>
+            <div class=" col shop ">
+                <a href="" class="col ti-shopping-cart-full"></a>
+                <span class="col">
+                    <p> Giỏ Hàng (0)</p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- danh mucj sản phẩm -->
+    <div class="menu-above  ">
+        <div class="menu-above-content row">
+            <div class="menu-content-all col">
+                <a href="">
+                    <i class="ti-menu-alt col"></i>
+                    <span class="col">Danh Mục Sản Phẩm</span>
+                    <i class="col ti-hand-point-down end"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="book-type">
+        <div class="type row">
+            <ul>
+                <li class="col hidden"><a href="#"> Trang chủ</a></li>
+                <li class="col hidden"><a href="#"> Sách Tình Cảm</a></li>
+                <li class="col last-hidden"><a href="#"> Romeo Và Juliet</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="book-buy">
+        <div class="container row">
+            <div class="book-left col">
+                <div class="img ">
+                    <img src="./img/rome.jpg" alt="">
+                </div>
+            </div>
+            <div class="book-info">
+                <div class="b-info">
+                    <div class="des">
+                        <h1>Romeo Và Juliet</h1>
+                        <div class="author">
+                            <p> <span> William Shakespeare</span>(Tác Giả) </p>
+                            <p> <span> Đặng Thế Bính</span>(Dịch Giả) </p>
+                        </div>
+                        <div class="price">
+                            <p>41,500 đ</p>
+                            <p>Tiết kiệm: <span> 7,500 đ (15%)</span></p>
+                            <p>Giá thị trường: 49,000 đ</p>
+                            <p>Tình trạng: <span>Hết hàng</span> </p>
+                        </div>
+                        <div class="counter">
+                            <p>Số Lượng</p>
+                            <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                            <input type="text" value="1">
+                            <span class="up" onClick='increaseCount(event, this)'>+</span>
+                        </div>
+                        <p class="call">Gọi đặt hàng: <span> 0969 999 999</span></p>
+                        <div class="information">
+                            <p>Thông tin & Khuyến mãi</p>
+                            <ul>
+                                <li>Đổi trả hàng trong vòng 7 ngày</li>
+                                <li>Freeship nội thành Hà Nội từ 150.000đ</li>
+                                <li>Freeship toàn quốc từ 250.000đ</li>
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                    <div class="promotion">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="book-right">
+                <div class="func">
+                    <div class="func-box1">
+                        <ul>
+                            <li class="add-to-fav">
+                                <a href="">
+                                    <i class="ti-heart"></i>
+                                    <p>Thêm vào yêu thích</p>
+                                </a>
+                            </li>
+                            <li class="good-member">
+                                <a href="">
+                                    <i class="ti-user"></i>
+                                    <p>Ưu đãi Khách hàng thân thiết</p>
+                                </a>
+                            </li>
+                            <li class="shipping-free">
+                                <a href="">
+                                    <i class="ti-truck"></i>
+                                    <p>Để được miễn phí vận chuyển</p>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="detail row">
+            <p class="bbook-info">THÔNG TIN CHI TIẾT</p>
+            <div class="detail-1">
+                <ul>
+                    <li>Nhà xuất bản: <a href=""> NXB Văn Học</a></li>
+                    <li>Ngày xuất bản: 01/10/2016</li>
+                    <li>Nhà phát hành:<a href="">Nhã Nam</a></li>
+                    <li>Kích thước: 20.5 x 14.0 x 2.0 cm</li>
+                    <li>Số trang: 160 trang</li>
+                    <li>Trọng lượng: 350 gram</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="content-end">
+        <div class="destion row">
+            <p class="gt">Giới thiệu sản phẩm</p>
+            <div class="destion-1">
+                <div class="text1">
+                    <h2> Romeo Và Juliet</h2>
+                    <p>"Ngày xưa, ở thành Verona tươi đẹp,</p>
+                    <p>Có hai nhà thuộc dòng thế phiệt trâm anh</p>
+                    <p>Mối thù xưa bỗng gây cảnh bất bình</p>
+                    <p>Máu lương thiện, tay người lành nhuộm đỏ.</p>
+                    <p>Số phận éo le, thâm thù hai họ</p>
+                    <p>Lại khéo xui sinh hạ đôi tình nhân</p>
+                    <p>Mối tình ai thê thảm muôn phần</p>
+                    <p>Chôn cừu hận, chỉ còn đành một thác.</p>
+                    <p>Tình lứa đôi thảm thương tan nát</p>
+                    <p>Trên xác con cha mẹ mới quên thù</p>
+                    <p>Chuyện thương tâm, trình diễn đôi giờ,</p>
+                    <p>Xin quý vị kiên tâm chiếu cố</p>
+                    <p>Sức mọn tài hèn, chúng tôi xin gắng trổ."</p>
+                </div>
+                <div class="text2">
+                 
+                    <p>Đây là tác phẩm kinh điển về câu chuyện tình của Romeo và juliet, một câu chuyện tình đau thương
+                        xuyên suốt thời đại lịch sử kiến ai cũng xót thương cho cặp đôi này.</p>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footter">
+            <div class="footer-content row">
+    
+                <h1>NHÀ SÁCH TRỰC TUYẾN HASAGI</h1>
+                <br>
+    
+                <p>NHÀ SÁCH TRỰC TUYẾN HASAGI
+                    Mua sách online tại nhà sách trực tuyến HASAGI để được cập nhật nhanh nhất các tựa sách đủ thể loại
+                    với
+                    mức giảm 15 - 35% cùng nhiều ưu đãi, quà tặng kèm. Qua nhiều năm, không chỉ là địa chỉ tin cậy để bạn
+                    mua
+                    sách trực tuyến, HASAGI còn có quà tặng, văn phòng phẩm, vật dụng gia đình,…với chất lượng đảm bảo,
+                    chủng
+                    loại đa dạng, chế độ bảo hành đầy đủ và giá cả hợp lý từ hàng trăm thương hiệu uy tín trong và ngoài
+                    nước.
+                    Đặc biệt, bạn có thể chọn những mẫu sổ tay handmade hay nhiều món quà tặng sinh nhật độc đáo chỉ có tại
+                    HASAGI</p>
+                <br>
+                <p>Mua sách online tại HASAGI, bạn được tận hưởng chính sách hỗ trợ miễn phí đổi trả hàng, giao hàng nhanh
+                    -
+                    tận nơi - miễn phí*, thanh toán linh hoạt - an toàn, đặc biệt giảm thêm trên giá bán khi sử dụng BBxu
+                    giúp
+                    bạn mua sách online giá 0đ!</p>
+                <br>
+                <p>Chỉ với 3 cú click chuột, chưa bao giờ trải nghiệm mua sách online lại dễ chịu và nhẹ nhàng như vậy. Còn
+                    chần
+                    chờ gì nữa, đặt mua ngay những tựa sách hay cùng hàng ngàn sản phẩm chất lượng khác tại HASAGI!</p>
+    
+            </div>
+        </div>
+        <div class="footter-below">
+            <div class="footter-below-content row">
+                <div class="col s1">
+                    <h3>HaSaGi MUA BÁN SÁCH ONLINE</h3>
+                    <p>Địa chỉ: Số 3 phố Cầu Giấy, P.Láng Thượng, Q.Đống Đa, Hà Nội.</p>
+                    <p>0969.999.999</p>
+                    <p>BookHaSaGi @gmail.com</p>
+                </div>
+                <div class="col s2">
+                    <h3>THÔNG TIN</h3>
+                    <ul>
+                        <li><a href="">Hướng Dẫn Mua Hàng</a></li>
+                        <li><a href="">Giao Nhận Và Thanh Toán</a></li>
+                        <li><a href="">Chính Sách Đổi Trả</a></li>
+                        <li><a href="">Liên Hệ</a> </li>
+                    </ul>
+                </div>
+                <div class="col s2">
+                    <h3>Về HaSaGi</h3>
+                    <ul>
+                        <li><a href="">Giới Thiệu</a></li>
+                        <li><a href="">Chính Sách Bảo Mật Thanh Toán</a></li>
+                        <li><a href="">Điều Khoản Sử Dụng</a></li>
+                        <li><a href="">Điều Khoản Giao Dich</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- js -->
+        <script>
+            function increaseCount(a, b) {
+                var input = b.previousElementSibling;
+                var value = parseInt(input.value, 10);
+                value = isNaN(value) ? 0 : value;
+                value++;
+                input.value = value;
+            }
+
+            function decreaseCount(a, b) {
+                var input = b.nextElementSibling;
+                var value = parseInt(input.value, 10);
+                if (value > 1) {
+                    value = isNaN(value) ? 0 : value;
+                    value--;
+                    input.value = value;
+                }
+            }
+        </script>
+</body>
